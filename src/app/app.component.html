@@ -1,0 +1,23 @@
+<div class="button-container">
+  <button *ngFor="let option of config.teaserOptions" 
+  (click)="changeHeadlineFontSize(option.fontSizeOption)" 
+  [style.fontSize]="option.fontSizeOption" 
+  [disabled]="option.fontSizeOption == headerFontSize"
+  >A</button>
+</div>
+
+<div class="category-container">
+  <div class="vertical-line"></div>
+  <h1>{{ teaserData.stamp.section.title }}</h1>
+</div>
+
+<div class="image-container">
+  <div class="heart-container">
+    <app-heart *ngFor="let opacity of heartOpacityArray" [opacity]="opacity"></app-heart>
+  </div>
+  <img src={{teaserData.article.image.link.url}} class="background-image">
+</div>
+
+<div class="headline-container">
+  <h1 [style.fontSize]="headerFontSize">{{ teaserData.article.title }}</h1>
+</div>

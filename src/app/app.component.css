@@ -1,0 +1,70 @@
+.button-container {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.button-container button {
+    width: 55px;
+    height: 55px;
+    font-family: 'Capitolium';
+}
+
+.category-container {
+    display: flex;
+    align-items: center;
+    height: 16px;
+}
+
+.category-container h1 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'FlamaSemiCondensed';
+    color: rgb(190, 2, 2);
+}
+
+.vertical-line {
+    width: 2px;
+    height: 16px;
+    background-color: rgb(190, 2, 2);
+    margin-right: 10px;
+}
+
+.image-container {
+    margin-top: 24px; /* 8 + half of a heart */
+    position: relative;
+}
+
+.background-image {
+    width: 290px;
+    display: block;
+}
+
+.heart-container {
+    position: absolute;
+    transform: translate(0%, -50%);
+    z-index: 10;
+}
+
+.headline-container {
+    margin-top: 16px;
+    width: 290px;
+}
+
+.headline-container h1 {
+    width: 290px;
+    font-weight: bold;
+    font-family: 'Capitolium';
+}
+
+@font-face {
+    font-family: Capitolium;
+    src: url('/assets/fonts/CapitoliumSemibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: FlamaSemiCondensed;
+    src: url('/assets/fonts/FlamaSemicond-Bold-Pol.woff2') format('woff2');
+}
